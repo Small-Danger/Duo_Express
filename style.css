@@ -130,6 +130,38 @@ h1 {
 }
 /* Styles généraux pour les petits écrans */
 @media (max-width: 576px) {
+    /* Positionner le bouton en bas à droite */
+    .bouton {
+        background-color: #002147; /* Couleur de fond du bouton */
+        color: white; /* Couleur du texte */
+        padding: 10px 20px; /* Taille du bouton */
+        border-radius: 50px; /* Bordure arrondie */
+        border: none; /* Enlève la bordure */
+        font-size: 19px; /* Taille de police */
+        cursor: pointer; /* Curseur de la souris */
+        z-index: 1000; /* S'assure que le bouton soit au-dessus des autres éléments */
+        width:80%;
+    }
+    .bouton-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom:5px;
+    }
+.texttaillesoustitre1{
+    font-size: 21px;
+    text-align: center;
+}
+.tailleparagraphe{
+    font-size: 13px;
+    padding: 10px;
+}
+.fixed-button:hover {
+    background-color: #003366; /* Couleur au survol */
+}
+.display-1{
+    font-size: 200px;
+}
     .background-div {
         height: 200px; /* Réduit la hauteur de la section d'accueil */
         text-align: center;
@@ -145,13 +177,14 @@ h1 {
         padding: 40px 10px;
     }
     .message-box {
+        display: flex;
         flex-direction: column; /* Place les éléments en colonne */
-        width: 90%; /* Réduit la largeur */
-        height: auto; /* Adapte la hauteur */
+        width: 60%; /* Réduit la largeur */
+        height: 80%; /* Adapte la hauteur */
     }
     .coachpaul img {
         width: 100%; /* Adapte l'image à la largeur */
-        height: 300px;
+        height: 180px;
     }
     .txt {
         width: 100%; /* Adapte le texte à la largeur */
@@ -213,6 +246,16 @@ h1 {
 
 /* Styles pour les grands écrans */
 @media (min-width: 1025px) {
+    .bouton {
+        background-color: #002147; /* Couleur de fond du bouton */
+        color: white; /* Couleur du texte */
+        padding: 10px 20px; /* Taille du bouton */
+        border-radius: 50px; /* Bordure arrondie */
+        border: none; /* Enlève la bordure */
+        font-size: 16px; /* Taille de police */
+        cursor: pointer; /* Curseur de la souris */
+        z-index: 1000; /* S'assure que le bouton soit au-dessus des autres éléments */
+    }
     .background-div {
         height: 300px;
     }
