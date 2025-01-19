@@ -1,0 +1,282 @@
+/* Pour L'image du fond au niveau de l'acceuil */
+.background-div {
+    position: relative; /* Pour positionner les pseudo-éléments */
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Couleur du texte */
+    overflow: hidden; /* Cache les débordements */
+    background-color:#002147;
+    opacity: 0.99; /* Couleur de fond semi-transparente */
+}
+.background-div::before {
+    content: ''; /* Nécessaire pour un pseudo-élément */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image/mosque.jpg'); /* Remplace par le chemin de ton image */
+    background-size: 100% 100%; /* Adapte l'image pour qu'elle soit toujours visible */
+    background-repeat: no-repeat;
+    background-position: right; /* Centre l'image */
+    opacity: 0.1; /* Ajuste l'opacité de l'image (entre 0 et 1) */
+    z-index: -1; /* Placer l'image derrière le contenu */
+}
+/* Pour L'image du fond au niveau de l'acceuil FIN*/
+h1 {
+    font-family: "Allura", serif;
+    font-size: 50px;
+  }
+
+  header {
+    display: flex;
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 60px;
+    z-index: 10;
+}
+/* Pour L'es services*/
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+.service-item {
+    background: #fff;
+    height: 280px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+.box1{
+    display: flex;
+    background-color: rgb(26, 34, 64);
+    width: 100%;
+    height: 120vh;
+    border-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.message-box {
+    flex: 1px;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: rgb(15, 14, 14);
+    margin-top: 20px;
+    padding: auto;
+    background-color: rgb(243, 245, 245);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 70%;
+    height: 200px;
+    box-shadow: 0 4px 10px  rgb(26, 34, 64);
+}
+.coachpaul{
+    text-align: center;
+}
+.coachpaul img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.texttaillesoustitre{
+    font-size:19px;
+    color:black;
+}
+.tailleparagraphe{
+    text-align: justify;
+    color: rgb(62, 63, 63);
+}
+.texttaillesoustitre1{
+    font-size:40px;
+}
+.txt{
+    padding-left: 10px;
+}
+
+.taille-img {
+    display: flex; /* Non nécessaire pour l'image seule, mais utile pour aligner si d'autres éléments sont présents */
+    width: 40%; /* Ajustez la taille en fonction du conteneur */
+    height: 100%; /* Maintient le ratio d'aspect de l'image */
+    object-fit: contain; /* Adapte l'image pour remplir le conteneur */
+    border-radius: 5px; /* Arrondit les bordures */
+    overflow: hidden; /* Empêche l'image de dépasser les bordures */
+    background-color: aqua;
+}
+/* Styles généraux pour les petits écrans */
+@media (max-width: 576px) {
+    .background-div {
+        height: 200px; /* Réduit la hauteur de la section d'accueil */
+        text-align: center;
+    }
+    .background-div h1 {
+        font-size: 30px; /* Réduit la taille du titre */
+    }
+    nav button {
+        padding: 5px 8px; /* Adapte les boutons de navigation */
+        font-size: 14px;
+    }
+    .services {
+        padding: 40px 10px;
+    }
+    .message-box {
+        flex-direction: column; /* Place les éléments en colonne */
+        width: 90%; /* Réduit la largeur */
+        height: auto; /* Adapte la hauteur */
+    }
+    .coachpaul img {
+        width: 100%; /* Adapte l'image à la largeur */
+        height: 300px;
+    }
+    .txt {
+        width: 100%; /* Adapte le texte à la largeur */
+    }
+    .mon-paragraphe {
+        font-size: 10px; /* Réduit la taille du texte */
+    }
+}
+
+/* Styles pour les tablettes (portrait) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .background-div {
+        height: 250px; /* Ajuste la hauteur de la section */
+    }
+    .background-div h1 {
+        font-size: 40px; /* Ajuste la taille du titre */
+    }
+    .services {
+        padding: 50px 15px;
+    }
+    .message-box {
+        flex-direction: column; /* Place les éléments en colonne */
+        width: 80%; /* Réduit la largeur */
+        height: auto; /* Adapte la hauteur */
+    }
+    .coachpaul img {
+        width: 100%; /* Adapte l'image à la largeur */
+        height: auto;
+    }
+    .txt {
+        width: 100%; /* Adapte le texte à la largeur */
+    }
+}
+
+/* Styles pour les écrans moyens (768px à 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .background-div {
+        height: 280px; /* Ajuste la hauteur */
+    }
+    .background-div h1 {
+        font-size: 45px; /* Ajuste la taille du titre */
+    }
+    .services {
+        padding: 60px 20px;
+    }
+    .message-box {
+        flex-direction: row; /* Aligne les éléments horizontalement */
+        width: 85%; /* Ajuste la largeur */
+        height: auto;
+    }
+    .coachpaul img {
+        width: 40%; /* Réduit la taille de l'image */
+        height: auto;
+    }
+    .txt {
+        width: 60%; /* Adapte le texte */
+    }
+}
+
+/* Styles pour les grands écrans */
+@media (min-width: 1025px) {
+    .background-div {
+        height: 300px;
+    }
+    .background-div h1 {
+        font-size: 50px;
+    }
+    .services {
+        padding: 60px 40px;
+    }
+    .message-box {
+        flex-direction: row;
+        width: 70%;
+        height: 200px;
+    }
+    .coachpaul img {
+        width: 200px;
+        height: 200px;
+    }
+    .txt {
+        width: calc(100% - 200px); /* Ajuste le texte par rapport à l'image */
+    }
+}
+
+
+
+
+
+
+
+.taille-txt{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+}
+.mon-paragraphe {
+    font-size: 12px; /* Ajustez la taille selon vos besoins */
+    line-height: 1.6; /* Ajuste l'espacement entre les lignes */
+    max-width: 600px; /* Limite la largeur pour une meilleure lisibilité */
+    text-align: justify; /* Aligne le texte de manière justifiée */
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+/* Pour Les footer*/
+footer {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+.whatsapp-number {
+    position: absolute;
+    top: 0;
+    right:0;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}

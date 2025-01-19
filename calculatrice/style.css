@@ -1,0 +1,138 @@
+/* Réinitialisation de marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5; /* Arrière-plan gris clair */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Centrage du contenu */
+header, main, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling de l'en-tête */
+header {
+    background-color: #002147;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Styling du contenu principal */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background-image.jpg') no-repeat center center/cover; /* Image d'arrière-plan */
+    color: white;
+}
+
+/* Styling du convertisseur */
+.converter {
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 500px;
+}
+
+.converter h2 {
+    font-size: 20px;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.converter p {
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.converter input {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+/* Styling du convertisseur */
+.converter {
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Style des labels et des inputs alignés horizontalement */
+.converter label {
+    font-size: 16px;
+    color: #FFF;
+    display: inline-block;
+    width: 40%; /* Largeur du label */
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.converter input {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 55%; /* Largeur de l'input */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Utilisation du flexbox pour aligner le label et l'input côte à côte */
+.converter .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #002147;
+    color: white;
+    padding: 10px;
+}
+
+.social ul li{
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+/* Responsivité pour mobile */
+@media (max-width: 600px) {
+    .converter input {
+        width: 80%;
+    }
+}
