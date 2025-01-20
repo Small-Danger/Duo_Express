@@ -56,3 +56,11 @@ function convertDirhamToCFA() {
 // Ajouter des écouteurs d'événements pour la saisie
 inputCFA.addEventListener('input', convertCFAtoDirham);
 inputDirham.addEventListener('input', convertDirhamToCFA);
+
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            let parent = item.parentElement;
+            parent.classList.toggle('active');
+        });
+    });
+

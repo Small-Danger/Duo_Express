@@ -33,87 +33,66 @@ header h1 {
 header p {
     font-size: 18px;
 }
-
-/* Styling du contenu principal */
-main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('background-image.jpg') no-repeat center center/cover; /* Image d'arrière-plan */
-    color: white;
+/* Conteneur de la calculatrice */
+.container {
+    width: 100%;
+    max-width: 500px; /* Largeur maximale */
+    padding: 20px;
 }
 
-/* Styling du convertisseur */
-.converter {
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+/* Design de la calculatrice */
+.calculator {
+    background-color: #002147;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
 }
 
-.converter h2 {
-    font-size: 20px;
-    color: #FFF;
+/* Titre de la calculatrice */
+.title {
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
-.converter p {
-    font-size: 16px;
-    color: #FFF;
-    margin-bottom: 10px;
+/* Style des groupes de champs de saisie */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-.converter input {
-    padding: 10px;
-    margin: 10px;
+.input-group label {
     font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Style du bouton */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
     border: none;
     border-radius: 5px;
-    width: 250px;
-}
-/* Styling du convertisseur */
-.converter {
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    width: 500px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
 }
 
-/* Style des labels et des inputs alignés horizontalement */
-.converter label {
-    font-size: 16px;
-    color: #FFF;
-    display: inline-block;
-    width: 40%; /* Largeur du label */
-    margin-bottom: 10px;
-    vertical-align: middle;
+button:hover {
+    background-color: #45a049;
 }
-
-.converter input {
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    width: 55%; /* Largeur de l'input */
-    display: inline-block;
-    vertical-align: middle;
-}
-
-/* Utilisation du flexbox pour aligner le label et l'input côte à côte */
-.converter .input-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
 
 
 /* Footer */
@@ -135,4 +114,177 @@ footer {
     .converter input {
         width: 80%;
     }
+}
+
+input.form-control {
+    border-radius: 10px; /* Bordures arrondies pour les champs de saisie */
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa; /* Fond plus clair pour les champs de saisie */
+    color: #333; /* Texte sombre pour la lisibilité */
+}
+
+input.form-control:focus {
+    border-color: #0056b3; /* Bordure bleue au focus */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+    outline: none;
+}
+
+button {
+    border-radius: 50px;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #295889;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003c7a; /* Couleur plus foncée au survol */
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .converter {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+/* Style général de la FAQ */
+.faq-container {
+    background-color: #f8f9fa;
+    border-top: 4px solid green;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* Titre de la FAQ */
+.faq-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #002147;
+    margin-bottom: 20px;
+}
+
+/* Style des questions */
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    color: #002147;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style des réponses */
+.faq-answer {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Ajouter des espacements entre les éléments */
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 768px) {
+    .faq-container {
+        width: 90%;
+    }
+}
+
+
+/* Style général du container FAQ */
+.faq-container {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Titre de la FAQ */
+.faq-title {
+    text-align: center;
+    font-size: 28px;
+    color: #002147;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Style des questions FAQ */
+.faq-item {
+    background-color: #002147;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Question en gras */
+.faq-question {
+    font-size: 20px;
+    color: #fcfafa;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Changement de couleur au survol des questions */
+.faq-question:hover {
+    color: #007bff;
+}
+
+/* Réponse */
+.faq-answer {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+/* Animation pour l'apparition des réponses */
+.faq-item p {
+    display: none;
+    margin-top: 10px;
+}
+
+.faq-item.active p {
+    display: block;
+}
+
+/* Ajouter un style de bordure pour les questions */
+.faq-item {
+    border-left: 4px solid #019337;
+    border-top: 4px solid #019337;
+}
+
+/* Hover sur le container des questions */
+.faq-item:hover {
+    background-color: #eaf1ff;
 }

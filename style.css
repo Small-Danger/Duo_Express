@@ -148,6 +148,10 @@ h1 {
         align-items: center;
         padding-bottom:5px;
     }
+    .bouton-container a{
+        color:white;
+        text-decoration: none;
+    }
 .texttaillesoustitre1{
     font-size: 21px;
     text-align: center;
