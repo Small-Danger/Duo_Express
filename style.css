@@ -173,6 +173,7 @@ h1 {
     nav button {
         padding: 5px 8px; /* Adapte les boutons de navigation */
         font-size: 16px;
+        padding: 10px;
     }
     .services {
         padding: 10px 10px;
@@ -180,7 +181,7 @@ h1 {
     .message-box {
         display: flex;
         flex-direction: column; /* Place les éléments en colonne */
-        width: 70%; /* Réduit la largeur */
+        width: 80%; /* Réduit la largeur */
         height: 75%; /* Adapte la hauteur */
         padding-bottom: 15px;
         border-radius: 30px;
@@ -246,6 +247,7 @@ h1 {
     }
     .background-div h1 {
         font-size: 55px; /* Réduit la taille du titre */
+        padding: 10px;
     }
     nav button {
         padding: 5px 8px; /* Adapte les boutons de navigation */
@@ -257,7 +259,7 @@ h1 {
     .message-box {
         display: flex;
         flex-direction: column; /* Place les éléments en colonne */
-        width: 70%; /* Réduit la largeur */
+        width: 80%; /* Réduit la largeur */
         height: 75%; /* Adapte la hauteur */
         padding-bottom: 15px;
         border-radius: 30px;
