@@ -155,6 +155,7 @@ h1 {
 .tailleparagraphe{
     font-size: 13px;
     padding: 10px;
+    text-align: center;
 }
 .fixed-button:hover {
     background-color: #003366; /* Couleur au survol */
@@ -163,24 +164,24 @@ h1 {
     font-size: 200px;
 }
     .background-div {
-        height: 200px; /* Réduit la hauteur de la section d'accueil */
+        height: 300px; /* Réduit la hauteur de la section d'accueil */
         text-align: center;
     }
     .background-div h1 {
-        font-size: 30px; /* Réduit la taille du titre */
+        font-size: 50px; /* Réduit la taille du titre */
     }
     nav button {
         padding: 5px 8px; /* Adapte les boutons de navigation */
-        font-size: 14px;
+        font-size: 16px;
     }
     .services {
-        padding: 40px 10px;
+        padding: 10px 10px;
     }
     .message-box {
         display: flex;
         flex-direction: column; /* Place les éléments en colonne */
-        width: 60%; /* Réduit la largeur */
-        height: 80%; /* Adapte la hauteur */
+        width: 75%; /* Réduit la largeur */
+        height: 75%; /* Adapte la hauteur */
     }
     .coachpaul img {
         width: 100%; /* Adapte l'image à la largeur */
@@ -192,6 +193,15 @@ h1 {
     .mon-paragraphe {
         font-size: 10px; /* Réduit la taille du texte */
     }
+    .about-us{
+        text-align: justify;
+        padding: 30px;
+    }
+    .title{
+        text-align: center;
+        padding-top: 10px;
+    }
+
 }
 
 /* Styles pour les tablettes (portrait) */
