@@ -44,38 +44,79 @@
 
 
 
-    <div class="faq-container">
-        <h2 class="faq-title">Question Fréquente (FAQ)</h2>
-        <div class="faq-item">
-            <h3 class="faq-question">1. Comment utiliser la calculatrice de conversion ?</h3>
-            <p class="faq-answer">
-                - <strong>Dirham vers FCFA :</strong> Entrez le montant au niveau de <strong>"Montant en
-                    Dirham"</strong> pour obtenir l'équivalent en FCFA.<br>
-                - <strong>FCFA vers Dirham :</strong> Entrez le montant au niveau de <strong>"Montant en FCFA"</strong>
-                pour obtenir l'équivalent en Dirham.
-            </p>
-        </div>
-        <div class="faq-item">
-            <h3 class="faq-question">2. Les frais sont-ils inclus dans les montants affichés ?</h3>
-            <p class="faq-answer">Oui, les montants affichés incluent déjà les frais de conversion appliqués.</p>
-        </div>
-        <div class="faq-item">
-            <h3 class="faq-question">3. Puis-je utiliser cette calculatrice pour de grandes sommes ?</h3>
-            <p class="faq-answer">Oui, la calculatrice fonctionne pour n'importe quel montant, qu'il soit petit ou
-                grand.</p>
-        </div>
-        <div class="faq-item">
-            <h3 class="faq-question">4. Est-il possible de se faire livrer en cas d'échange ?</h3>
-            <p class="faq-answer">Oui, il est possible de se faire livrer. Nous proposons des services de livraison pour
-                les échanges de devises.</p>
-        </div>
-        <div class="faq-item">
-            <h3 class="faq-question">5. À combien correspond le taux de conversion et quels sont les frais
-                supplémentaires ?</h3>
-            <p class="faq-answer">Le taux de conversion actuel est de 1 Dirham = 60 FCFA. De plus, des frais
-                supplémentaires de 6% sont appliqués sur chaque conversion.</p>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Question Fréquente (FAQ)</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        1. Comment utiliser la calculatrice de conversion ?
+                    </button>
+                </h2>
+                <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        - <strong>Dirham vers FCFA :</strong> Entrez le montant au niveau de <strong>"Montant en Dirham"</strong> pour obtenir l'équivalent en FCFA.<br>
+                        - <strong>FCFA vers Dirham :</strong> Entrez le montant au niveau de <strong>"Montant en FCFA"</strong> pour obtenir l'équivalent en Dirham.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                        2. Les frais sont-ils inclus dans les montants affichés ?
+                    </button>
+                </h2>
+                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Oui, les montants affichés incluent déjà les frais de conversion appliqués.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                        3. Puis-je utiliser cette calculatrice pour de grandes sommes ?
+                    </button>
+                </h2>
+                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Oui, la calculatrice fonctionne pour n'importe quel montant, qu'il soit petit ou grand.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                        4. Est-il possible de se faire livrer en cas d'échange ?
+                    </button>
+                </h2>
+                <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Oui, il est possible de se faire livrer. Nous proposons des services de livraison pour les échanges de devises.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                        5. À combien correspond le taux de conversion et quels sont les frais supplémentaires ?
+                    </button>
+                </h2>
+                <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Le taux de conversion actuel est de 1 Dirham = 60 FCFA. De plus, des frais supplémentaires de 6% sont appliqués sur chaque conversion.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
 
     <!-- Footer -->
     <!-- <footer>
