@@ -1,0 +1,71 @@
+        /* Navbar Styles */
+        .navbar {
+            background: linear-gradient(90deg, #0b4c92, #0056b3); /* Gradient modern */
+            padding: 0.8rem 1rem;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .navbar-toggler {
+            border: none;
+            outline: none;
+            transition: transform 0.3s ease;
+        }
+        
+        
+        .nav-link {
+            font-size: 1rem;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .nav-link:hover {
+            color: #ffdd00; /* Couleur au survol */
+        }
+        
+        .btn-outline-light {
+            border: 2px solid white;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-light:hover {
+            background-color: white;
+            color: #007BFF;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* footer */
+
+        .footer {
+            background: linear-gradient(90deg, #0b4c92, #0056b3); /* Gradient modern */
+            color: white;
+            padding: 40px 0;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 2rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--primary-color);
+        }
+
+        .about-us p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+
+
+
+        

@@ -1,6 +1,6 @@
 // Définir les taux de conversion
-const tauxCFAtoDirham = 1 / 66; // 1 CFA = 0.01515 Dirham
-const tauxDirhamToCFA = 58; // 1 Dirham = 58 CFA
+const tauxCFAtoDirham = 1 / 65; // 1 CFA = 0.01539 Dirham
+const tauxDirhamToCFA = 60; // 1 Dirham = 58 CFA
 
 // Fonction pour convertir le montant CFA en Dirham (Modale 2)
 function convertCFAtoDirham() {

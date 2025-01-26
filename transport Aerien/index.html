@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+    <title>DUO EXPRESS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">DUO EXPRESS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Navigation links -->
+                <ul class="navbar-nav ms-auto mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#about">À propos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section d'introduction -->
+    <section id="intro" class="container py-5">
+        <h2 class="text-center mb-4">Import Aérien</h2>
+        <p class="text-center">Notre service d'importation aérienne est rapide et sécurisé, conçu pour vous offrir une
+            solution efficace pour vos envois urgents ou de grande valeur. Nous desservons plusieurs pays d'Afrique de
+            l'Ouest, notamment le Burkina Faso, le Mali, le Sénégal, la Côte d'Ivoire et la Guinée. Nous vous aidons à
+            importer vos marchandises en toute simplicité.</p>
+    </section>
+
+<!-- Section du processus -->
+<section id="process" class="container py-5">
+    <h3 class="text-center mb-4 fw-bold">Comment ça marche ?</h3>
+    <p class="text-center text-muted mb-4">
+        Découvrez les étapes simples et efficaces de notre processus pour assurer un service professionnel et rapide.
+    </p>
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <ol class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="fw-bold">Demande de devis :</span> Contactez-nous pour un devis personnalisé
+                        adapté à vos besoins d'importation.
+                    </div>
+                    <span class="badge bg-primary rounded-pill"><i class="bi bi-chat-dots"></i></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="fw-bold">Expédition :</span> Nous organisons l'envoi avec les meilleures
+                        compagnies aériennes, garantissant sécurité et rapidité.
+                    </div>
+                    <span class="badge bg-warning rounded-pill"><i class="bi bi-airplane"></i></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="fw-bold">Livraison :</span> Votre marchandise arrive à destination selon les
+                        délais prévus et est prête à être récupérée ou livrée.
+                    </div>
+                    <span class="badge bg-success rounded-pill"><i class="bi bi-check-circle"></i></span>
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Section suivi des colis -->
+    <section id="tracking" class="container py-5">
+        <h3 class="text-center mb-4">Suivi de la Position des Colis</h3>
+        <p class="text-center">Bien que nous ne proposions pas de système de suivi automatisé, nous nous engageons à
+            vous fournir des informations précises sur la position de chaque colis. Si vous avez besoin d'une mise à
+            jour sur l'état de votre envoi, n'hésitez pas à nous contacter.</p>
+    </section>
+
+
+    <!-- Section dates et destinations -->
+    <section id="dates-destinations" class="container py-5">
+        <h3 class="text-center mb-4">Nouvelles Dates et Destinations Disponibles</h3>
+        <p class="text-center mb-4">Nous mettons à jour régulièrement nos dates d'expédition et nos destinations
+            disponibles. Voici les prochaines dates :</p>
+
+        <!-- Tableau des dates et destinations -->
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped custom-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Pays</th>
+                        <th scope="col">Date d'expédition</th>
+                        <th scope="col">Type de départ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Burkina Faso -->
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+                    <tr>
+                        <td colspan="3" class="bg-info text-white text-center">Burkina Faso <span
+                                class="flag-icon flag-icon-bf"></span></td>
+                    </tr>
+                    <tr class="burkina">
+                        <td>Burkina Faso</td>
+                        <td>15 février 2025</td>
+                        <td><span class="badge bg-success">Aller</span></td>
+                    </tr>
+                    <tr class="burkina-retour">
+                        <td>Burkina Faso</td>
+                        <td>10 mars 2025</td>
+                        <td><span class="badge bg-danger">Retour</span></td>
+                    </tr>
+
+                    <!-- Mali -->
+                    <tr>
+                        <td colspan="3" class="bg-success text-white text-center">Mali <span
+                                class="flag-icon flag-icon-ml"></span></td>
+                    </tr>
+                    <tr class="mali">
+                        <td>Mali</td>
+                        <td>20 février 2025</td>
+                        <td><span class="badge bg-success">Aller</span></td>
+                    </tr>
+                    <tr class="mali-retour">
+                        <td>Mali</td>
+                        <td>12 mars 2025</td>
+                        <td><span class="badge bg-danger">Retour</span></td>
+                    </tr>
+
+                    <!-- Sénégal -->
+                    <tr>
+                        <td colspan="3" class="bg-warning text-white text-center">Sénégal <span
+                                class="flag-icon flag-icon-sn"></span></td>
+                    </tr>
+                    <tr class="senegal">
+                        <td>Sénégal</td>
+                        <td>25 février 2025</td>
+                        <td><span class="badge bg-success">Aller</span></td>
+                    </tr>
+                    <tr class="senegal-retour">
+                        <td>Sénégal</td>
+                        <td>15 mars 2025</td>
+                        <td><span class="badge bg-danger">Retour</span></td>
+                    </tr>
+
+                    <!-- Côte d'Ivoire -->
+                    <tr>
+                        <td colspan="3" class="bg-primary text-white text-center">Côte d'Ivoire <span
+                                class="flag-icon flag-icon-ci"></span> </td>
+                    </tr>
+                    <tr class="civ">
+                        <td>Côte d'Ivoire</td>
+                        <td>28 février 2025</td>
+                        <td><span class="badge bg-success">Aller</span></td>
+                    </tr>
+                    <tr class="civ-retour">
+                        <td>Côte d'Ivoire</td>
+                        <td>5 mars 2025</td>
+                        <td><span class="badge bg-danger">Retour</span></td>
+                    </tr>
+
+                    <!-- Guinée -->
+                    <tr>
+                        <td colspan="3" class="bg-secondary text-white text-center">Guinée <span
+                                class="flag-icon flag-icon-gn"></span></td>
+                    </tr>
+                    <tr class="guinee">
+                        <td>Guinée</td>
+                        <td>5 mars 2025</td>
+                        <td><span class="badge bg-success">Aller</span></td>
+                    </tr>
+                    <tr class="guinee-retour">
+                        <td>Guinée</td>
+                        <td>12 mars 2025</td>
+                        <td><span class="badge bg-danger">Retour</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="text-center mt-3">Si vous souhaitez envoyer vos marchandises vers l'un de ces pays à ces dates,
+            contactez-nous dès maintenant.</p>
+    </section>
+
+
+    <style>
+        /* Style général pour améliorer l'apparence du tableau */
+        .custom-table {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Bordures et mise en forme des cellules */
+        .custom-table th,
+        .custom-table td {
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Effet hover sur les lignes */
+        .custom-table tbody tr:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        /* En-têtes de tableau */
+        .custom-table thead {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Réduction des marges et du padding sur les petites résolutions */
+        @media (max-width: 768px) {
+
+            .custom-table th,
+            .custom-table td {
+                padding: 10px;
+            }
+
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        /* Ajouter un peu d'espace autour des sections */
+        #dates-destinations {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        /* Texte centré et léger pour la description */
+        #dates-destinations p {
+            font-size: 1.1rem;
+            color: #555555;
+        }
+
+        /* Style général pour améliorer l'apparence du tableau */
+        .custom-table {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Bordures et mise en forme des cellules */
+        .custom-table th,
+        .custom-table td {
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Effet hover sur les lignes */
+        .custom-table tbody tr:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        /* En-têtes de tableau */
+        .custom-table thead {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Réduction des marges et du padding sur les petites résolutions */
+        @media (max-width: 768px) {
+
+            .custom-table th,
+            .custom-table td {
+                padding: 10px;
+            }
+
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        /* Style des sections par pays */
+        .custom-table tr>td {
+            font-weight: bold;
+        }
+
+        .bg-info {
+            background-color: #17a2b8 !important;
+            /* Couleur pour Burkina Faso */
+        }
+
+        .bg-success {
+            background-color: #28a745 !important;
+            /* Couleur pour Mali */
+        }
+
+        .bg-warning {
+            background-color: #ffc107 !important;
+            /* Couleur pour Sénégal */
+        }
+
+        .bg-primary {
+            background-color: #007bff !important;
+            /* Couleur pour Côte d'Ivoire */
+        }
+
+        .bg-secondary {
+            background-color: #6c757d !important;
+            /* Couleur pour Guinée */
+        }
+
+        .flag-icon {
+            width: 20px;
+            height: 15px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        /* Style des badges pour les départs et retours */
+        .badge.bg-success {
+            background-color: #28a745 !important;
+            /* Vert pour "Aller" */
+        }
+
+        .badge.bg-danger {
+            background-color: #dc3545 !important;
+            /* Rouge pour "Retour" */
+        }
+    </style>
+
+    <!-- Section demande de devis -->
+    <section id="pricing" class="container py-5">
+        <h3 class="text-center mb-4">Demander un Devis</h3>
+        <form action="contact_form.php" method="POST">
+            <div class="mb-3">
+                <label for="weight" class="form-label">Poids de la marchandise (kg)</label>
+                <input type="number" id="weight" name="weight" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="destination" class="form-label">Destination</label>
+                <select id="destination" name="destination" class="form-select" required>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Sénégal">Sénégal</option>
+                    <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                    <option value="Guinée">Guinée</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Demander un devis</button>
+        </form>
+    </section>
+
+    <!-- Section contact -->
+    <section id="contact" class="container py-5 bg-light">
+        <h3 class="text-center mb-4">Contactez-Nous</h3>
+        <p class="text-center">Si vous avez des questions ou si vous souhaitez obtenir des informations détaillées sur
+            votre envoi, contactez-nous :</p>
+        <p class="text-center">Email : <a href="mailto:contact@tonentreprise.com">contact@tonentreprise.com</a></p>
+        <p class="text-center">Téléphone : <a href="tel:+212620876468">+212 620 876 468</a></p>
+    </section>
+
+    <!-- Section appel à l'action -->
+    <section id="cta" class="container py-5 text-center">
+        <h3 class="mb-4">Prêt à commencer ?</h3>
+        <p>Contactez-nous dès aujourd'hui pour un service d'importation aérienne rapide et sécurisé. Nous nous occupons
+            de tout pour vous.</p>
+        <a href="https://wa.me/212620876468" class="btn btn-primary btn-lg" target="_blank">Contactez-Nous<i
+                class="fab fa-whatsapp"></i></a>
+    </section>
+    <br>
+    <br>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h4 class="mb-3">Suivez-nous sur :</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/DUOEXPRESS" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/212620876468" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/DUOEXPRESS" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 DUO EXPRESS</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Aérien - DUO EXPRESS</title>
+    <!-- Lien vers le fichier CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien vers ton fichier CSS personnalisé (si nécessaire) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- Lien vers le fichier JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
