@@ -2,12 +2,10 @@
 const tauxCFAtoDirham = 1 / 66; // 1 CFA = 0.01515 Dirham
 const tauxDirhamToCFA = 58; // 1 Dirham = 58 CFA
 
-// Sélectionner les éléments HTML
-const inputCFA = document.getElementById('cfa');
-const inputDirham = document.getElementById('dirham');
-
-// Fonction pour convertir le montant CFA en Dirham
+// Fonction pour convertir le montant CFA en Dirham (Modale 2)
 function convertCFAtoDirham() {
+    const inputCFA = document.getElementById('cfa2');
+    const inputDirham = document.getElementById('dirham2');
     const cfaValue = parseFloat(inputCFA.value);
     if (!isNaN(cfaValue)) {
         const dirhamValue = cfaValue * tauxCFAtoDirham;
@@ -17,8 +15,10 @@ function convertCFAtoDirham() {
     }
 }
 
-// Fonction pour convertir le montant Dirham en CFA
+// Fonction pour convertir le montant Dirham en CFA (Modale 1)
 function convertDirhamToCFA() {
+    const inputDirham = document.getElementById('dirham1');
+    const inputCFA = document.getElementById('cfa1');
     const dirhamValue = parseFloat(inputDirham.value);
     if (!isNaN(dirhamValue)) {
         const cfaValue = dirhamValue * tauxDirhamToCFA;
@@ -29,5 +29,5 @@ function convertDirhamToCFA() {
 }
 
 // Lier les événements "input" aux fonctions de conversion
-inputCFA.addEventListener('input', convertCFAtoDirham);
-inputDirham.addEventListener('input', convertDirhamToCFA);
+document.getElementById('cfa2').addEventListener('input', convertCFAtoDirham);
+document.getElementById('dirham1').addEventListener('input', convertDirhamToCFA);

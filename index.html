@@ -14,9 +14,8 @@
         /* Couleur personnalisée */
         :root {
             --primary-color: #ff6f00; /* Orangé foncé comme dans votre style initial */
-            --secondary-color: #002147 /* Bleu sombre pour texte et arrière-plan */
+            --secondary-color:linear-gradient(90deg, #0b4c92, #0056b3); /* Gradient modern */ /* Bleu sombre pour texte et arrière-plan */
         }
-
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f4f4f4;
@@ -46,7 +45,7 @@
     text-align: center;
     color: white; /* Couleur du texte */
     overflow: hidden; /* Cache les débordements */
-    background-color:#002147;
+    background: linear-gradient(90deg, #0b4c92, #0056b3); /* Gradient modern */
     opacity: 0.99; /* Couleur de fond semi-transparente */
 }
 .background-div::before {
@@ -60,7 +59,7 @@
     background-size: 100% 100%; /* Adapte l'image pour qu'elle soit toujours visible */
     background-repeat: no-repeat;
     background-position: right; /* Centre l'image */
-    opacity: 0.1; /* Ajuste l'opacité de l'image (entre 0 et 1) */
+    opacity: 0.3; /* Ajuste l'opacité de l'image (entre 0 et 1) */
     z-index: -1; /* Placer l'image derrière le contenu */
 }
         /* Flou sur l'image de fond */
@@ -102,7 +101,7 @@
         }
 
         .footer {
-            background-color: var(--secondary-color);
+            background: linear-gradient(90deg, #0b4c92, #0056b3); /* Gradient modern */
             color: white;
             padding: 40px 0;
         }
@@ -127,31 +126,85 @@
  /*       .about-us h2 {
             color: var(--primary-color);
         }*/
+
+        /* Navbar Styles */
+.navbar {
+    background: linear-gradient(90deg, #0b4c92, #0056b3); /* Gradient modern */
+    padding: 0.8rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease;
+}
+
+
+.nav-link {
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffdd00; /* Couleur au survol */
+}
+
+.btn-outline-light {
+    border: 2px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #007BFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
     </style>
 </head>
 
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">DUO EXPRESS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">À propos</a>
-                    </li>
-                </ul>
-            </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">DUO EXPRESS</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Navigation links -->
+            <ul class="navbar-nav ms-auto mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="#about">À propos</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
+
+
+
 
     <!-- Header Section -->
     <section class="background-div">
@@ -192,7 +245,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Échange de devises</h5>
                             <p class="card-text">Des services d'échange sûrs et rapides.</p>
-                            <a href="calculatrice/index.html" class="btn btn-warning">Disponible <i class="fas fa-sync-alt fa-spin"></i></a>
+                            <a href="calculatrice/index.html" class="btn btn-warning">Disponible</a>
                         </div>
                     </div>
                 </div>
