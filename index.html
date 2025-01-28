@@ -208,7 +208,7 @@
 
 
     <!-- Header Section -->
-    <section class="background-div">
+    <section class="background-div" data-aos="fade-up">
         <div>
             <h1>Bienvenue chez DUO EXPRESS</h1>
             <p>Votre partenaire logistique pour l'Afrique et au-delà</p>
@@ -216,47 +216,47 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services py-5">
+    <section id="services" class="services py-5" data-aos="fade-up">
         <div class="container">
-            <h2 class="text-center text-primary mb-5">Nos Services</h2>
+            <h2 class="text-center text-primary mb-5" data-aos="fade-up">Nos Services</h2>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
                     <div class="card text-center">
                         <img src="image/avion.jpg" alt="Transport aérien" class="card-img-top service-img">
                         <div class="card-body">
-                            <h5 class="card-title">Transport aérien</h5>
-                            <p class="card-text">Expéditions rapides et fiables vers l'Afrique et au-delà.</p>
+                            <h5 class="card-title" data-aos="fade-up">Transport aérien</h5>
+                            <p class="card-text" data-aos="fade-up">Expéditions rapides et fiables vers l'Afrique et au-delà.</p>
                             <a href="transport Aerien/index.html" class="btn btn-warning">Disponible <i class="bi bi-chevron-double-right fa-1x"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
                     <div class="card text-center">
                         <img src="image/bateaux.webp" alt="Transport maritime" class="card-img-top service-img">
                         <div class="card-body">
-                            <h5 class="card-title">Transport maritime</h5>
-                            <p class="card-text">Efficacité et fiabilité dans nos services maritimes entre le Maroc et la France.</p>
-                            <a href="transport Maritime/index4.html" class="btn btn-warning">Bientôt Disponible <i class="fas fa-sync-alt fa-spin"></i></a>
+                            <h5 class="card-title" data-aos="fade-up">Transport maritime</h5>
+                            <p class="card-text" data-aos="fade-up">Efficacité et fiabilité dans nos services maritimes entre le Maroc et la France.</p>
+                            <a href="transport Maritime/index4.html" class="btn btn-warning">Disponible <i class="bi bi-chevron-double-right fa-1x"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
                     <div class="card text-center">
                         <img src="image/exchange.webp" alt="Échange de devises" class="card-img-top service-img">
                         <div class="card-body">
-                            <h5 class="card-title">Échange de devises</h5>
-                            <p class="card-text">Des services d'échange sûrs et rapides.</p>
+                            <h5 class="card-title" data-aos="fade-up">Échange de devises</h5>
+                            <p class="card-text" data-aos="fade-up">Des services d'échange sûrs et rapides.</p>
                             <a href="calculatrice/index.html" class="btn btn-warning">Disponible <i class="bi bi-chevron-double-right fa-1x"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
                     <div class="card text-center">
                         <img src="image/achat-inter.webp" alt="Achat international" class="card-img-top service-img">
                         <div class="card-body">
-                            <h5 class="card-title">Achat à l'international</h5>
-                            <p class="card-text">Simplifiez vos achats internationaux avec notre aide.</p>
-                            <a href="#" class="btn btn-warning">Bientôt Disponible <i class="fas fa-sync-alt fa-spin"></i></a>
+                            <h5 class="card-title" data-aos="fade-up">Achat à l'international</h5>
+                            <p class="card-text" data-aos="fade-up">Simplifiez vos achats internationaux avec notre aide.</p>
+                            <a href="achat international/index5.html" class="btn btn-warning">Disponible <i class="bi bi-chevron-double-right fa-1x"></i></a>
                         </div>
                     </div>
                 </div>
@@ -265,11 +265,11 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-us py-5 bg-light">
+    <section id="about" class="about-us py-5 bg-light" data-aos="fade-up">
         <div class="container">
-            <h2 class="text-center mb-4 text-primary">À propos de DUO EXPRESS</h2>
+            <h2 class="text-center mb-4 text-primary" data-aos="fade-up">À propos de DUO EXPRESS</h2>
             <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6">
+                <div class="col-md-8 col-lg-6" data-aos="fade-up">
                     <p>Nous sommes une équipe de jeunes passionnés, engagés à faciliter les échanges commerciaux et logistiques. Depuis trois ans, nous mettons notre expertise au service des particuliers et des entreprises, en assurant des solutions rapides et adaptées à vos besoins spécifiques.</p>
                     <p>Notre mission est de simplifier le processus d'import-export, d'échanges de devises, et plus encore, en proposant des services de qualité, fiables, et performants pour tous vos besoins logistiques.</p>
                 </div>
@@ -294,5 +294,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="transport Maritime/scritp4.js"></script>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- Ajouter le CSS de AOS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </html>

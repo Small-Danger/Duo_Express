@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../transport Maritime/style4.css">
+    <title>DUO EXPRESS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-bs-spy="scroll"
+            data-bs-target="#navbar-example">
+            <div class="container">
+                <a class="navbar-brand" href="#">DUO EXPRESS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#maritime-introduction">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#special-pricing">Grille Tarifaire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#maritime-direction">Estimation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#maritime-faq">Questions Fréquentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cta">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<br><br><br>
+
+    <section id="maritime-introduction" class="into container py-5" data-aos="fade-up">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-8">
+                <h2 class="display-4 mb-3">Transport Maritime</h2>
+                <p class="lead mb-4">Nous offrons des services de transport maritime entre la France et le Maroc
+                    (Casablanca),
+                    avec des tarifs adaptés selon la direction du transport. Expédiez vos marchandises de manière fiable
+                    et sécurisée.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Modal for displaying the quote -->
+<div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="quoteModalLabel">Votre Devis</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="quoteMessage">Veuillez entrer vos informations pour obtenir un devis.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                <a id="confirmQuoteBtn" href="#" class="btn btn-primary" target="_blank">Confirmer le Devis</a>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="special-pricing" class="container py-5" data-aos="fade-up">
+
+        <h3 class="text-center mb-4">Articles avec Tarification Spéciale</h3>
+        <div class="table-responsive shadow-sm rounded-3">
+            <table class="table table-bordered table-striped custom-table">
+                <thead class="bg-primary text-white">
+                    <tr>
+                        <th scope="col">Nom de l'Article</th>
+                        <th scope="col">Catégorie</th>
+                        <th scope="col">Prix (MAD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ordinateur</td>
+                        <td>Électronique</td>
+                        <td>1500</td>
+                    </tr>
+                    <tr>
+                        <td>Médicaments</td>
+                        <td>Produits de Santé</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Produits Cosmétiques</td>
+                        <td>Beauté</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>Documents (Légaux)</td>
+                        <td>Documents</td>
+                        <td>50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</section>
+
+<!-- Styles CSS Améliorés -->
+<style>
+    #special-pricing {
+        background-color: #f0f4f8;
+        padding: 3rem 0;
+        border-radius: 8px;
+    }
+
+    .table {
+        border-collapse: separate;
+        border-spacing: 0 15px; /* Espacement entre les lignes */
+    }
+
+    .table th,
+    .table td {
+        padding: 1.5rem; /* Plus d'espace pour une meilleure lisibilité */
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f7f7f7; /* Légère couleur au survol */
+        transform: scale(1.02); /* Légère agrandissement au survol */
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .table-bordered {
+        border: 1px solid #dee2e6; /* Bordures douces */
+        border-radius: 8px;
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+        border-color: #dee2e6; /* Coloration subtile des bordures */
+    }
+
+    .table th {
+        background-color: #007bff;
+        text-align: center;
+    }
+
+    .table td {
+        text-align: center;
+    }
+
+    /* Ombre subtile pour le tableau */
+    .table-responsive {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .table th {
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .table td {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    /* Améliorations supplémentaires pour l'en-tête */
+    .table th, .table td {
+        border-bottom: 2px solid #ddd;
+    }
+
+    .table td {
+        background-color: #ffffff;
+    }
+
+</style>
+
+<section id="maritime-direction" class="container py-5" data-aos="fade-up">
+    <h3 class="text-center mb-4">Choisissez la Direction de Votre Expédition</h3>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <form id="directionForm">
+                <div class="form-group">
+                    <label for="departure">Pays de départ</label>
+                    <select id="departure" name="departure" class="form-select" required>
+                        <option value="france_to_morocco">France → Maroc (Casablanca)</option>
+                        <option value="morocco_to_france">Maroc → France</option>
+                    </select>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="weight">Poids de la Marchandise (kg)</label>
+                    <input type="number" id="weight" name="weight" class="form-control" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-4 w-100">Obtenir un Devis</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    
+    <section id="maritime-faq" class="container py-5 bg-light" data-aos="fade-up">
+        <h3 class="text-center mb-4">Questions Fréquentes</h3>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Quels types de marchandises transportez-vous ?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Nous transportons des marchandises générales, des produits industriels et des marchandises
+                        sensibles entre la France et le Maroc.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Quels sont les délais d’expédition ?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Le transport maritime entre la France et le Maroc prend généralement entre 5 et 7 jours
+                        ouvrables, selon la direction et les conditions météorologiques.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="maritime-contac" class="container py-5  text-black" data-aos="fade-up">
+        <h3 class="text-center mb-4">Contactez-Nous pour Plus d'Informations</h3>
+        <p class="text-center mb-4">Vous avez des questions spécifiques sur le transport maritime ? Contactez notre
+            équipe pour des réponses rapides et des solutions adaptées à vos besoins.</p>
+    
+        <section id="cta" class="container py-5 text-center" data-aos="fade-up">
+            <a href="https://wa.me/212620876468" class="btn btn-primary btn-lg" target="_blank">Contactez-Nous<i
+                    class="fab fa-whatsapp"></i></a>
+        </section>
+    </section>
+    
+    <!-- Add custom CSS for styling -->
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container text-center">
+                <h4 class="mb-3">Suivez-nous sur :</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/DUOEXPRESS" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/212620876468" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/DUOEXPRESS" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2025 DUO EXPRESS</p>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- Ajouter le CSS de AOS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+
+
+</body>
+<!-- Ajout du lien vers Bootstrap JS et CSS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="../transport Maritime/scritp4.js"></script>
+
+</html>

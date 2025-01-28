@@ -1,0 +1,188 @@
+       /* Navbar Styles */
+       .navbar {
+        background: linear-gradient(90deg, #0b4c92, #0056b3); /* Gradient modern */
+        padding: 0.8rem 1rem;
+        transition: all 0.3s ease-in-out;
+        color: white;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: white;
+    }
+    
+    .navbar-toggler {
+        border: none;
+        outline: none;
+        transition: transform 0.3s ease;
+        color: white;
+    }
+    
+    
+    .nav-link {
+        font-size: 1rem;
+        transition: color 0.3s ease-in-out;
+        color: white;
+    }
+    
+    .nav-link:hover {
+        color: #ffdd00; /* Couleur au survol */
+    }
+    
+    .btn-outline-light {
+        border: 2px solid white;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+    
+    .btn-outline-light:hover {
+        background-color: white;
+        color: #f3f5f7;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+ 
+ /* Couleur thème */
+ :root {
+    --theme-gradient: linear-gradient(90deg, #0b4c92, #0056b3);
+    --theme-color: #0056b3;
+    --text-color: #ffffff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.header-section {
+    background: var(--theme-gradient);
+    color: var(--text-color);
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 5px solid #003f78;
+}
+
+.header-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.header-section p {
+    font-size: 1.2rem;
+}
+
+.cards-section {
+    padding: 50px 20px;
+}
+
+.card {
+    border: none;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: var(--theme-color);
+}
+
+.cta-section {
+    background: var(--theme-gradient);
+    color: var(--text-color);
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: bounceIn 1.2s ease-in-out;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: #fff;
+    color: var(--theme-color);
+    border: none;
+    border-radius: 50px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cta-btn:hover {
+    background: var(--theme-color);
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* footer */
+
+.footer {
+    background: linear-gradient(90deg, #0b4c92, #0056b3); /* Gradient modern */
+    color: white;
+    padding: 40px 0;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
