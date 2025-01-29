@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>DUO EXPRESS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-bs-spy="scroll"
+    <nav class="navbar navbar-expand-lg navbar-dark" data-bs-spy="scroll"
         data-bs-target="#navbar-example">
         <div class="container">
             <a class="navbar-brand" href="#">DUO EXPRESS</a>
@@ -43,14 +44,96 @@
                     </ul>
                 </nav>
             </div>
+            <div class="widget-container">
+                <div class="widget">
+                    <a href="../index.html">
+                        <i class="fas fa-home" style="color: white;"></i>
+                    <p style="color: white;">Accueil</p>
+                </a>
+                </div>
+                <div class="widget">
+                    <a href="../transport Aerien/index.html">
+                      <i class="fas fa-plane" style="color: white;"></i>
+                    <p style="color: white;">Avion</p>
+                </a>
+                </div>
+                <div class="widget">
+                    <a href="../transport Maritime/index4.html">
+                    <i class="fa-solid fa-ship" style="color: white;"></i>
+                    <p style="color: white;">bateaux</p>
+                </a>
+                </div>
+                <div class="widget">
+                    <a href="../calculatrice/index.html">
+                    <i class="fas fa-exchange-alt" style="color: white;"></i>
+                    <p style="color: white;">Argent</p>
+                </a>
+                </div>
+                <div class="widget">
+                    <a href="../achat international/index5.html">
+                    <i class="fas fa-shopping-cart" style="color: white;"></i>
+                    <p style="color: white;">Achat</p>
+                </a>
+                </div>
+            </div>
+        </nav>
+        <style>
+            .header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f8f9fa;
+                padding: 10px 0;
+            }
+            .widget-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+            .widget {
+                background: linear-gradient(135deg, #007bff, #00c3ff);
+                color: white;
+                border-radius: 10px;
+                text-align: center;
+                width: 80px;
+                height: 80px;
+                transition: transform 0.3s ease;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+            }
+            .widget:hover {
+                transform: scale(1.05);
+            }
+            .widget i {
+                font-size: 20px;
+                margin-bottom: 3px;
+            }
+            .widget p {
+                margin: 0;
+                font-weight: bold;
+            }
+            @media (max-width: 600px) {
+                .widget {
+                    width: 55px;
+                    height: 55px;
+                    font-size: 10px;
+                }
+                .widget i {
+                    font-size: 16px;
+                }
+            }
+        </style>
         </div>
     </nav>
-
+<br><br>
     </head>
-    <br>
-    <br>
-    <br>
-    <br>
     <!-- Section d'introduction -->
     <section id="intro" class="background-div container py-2" data-aos="fade-up">
         <div>
